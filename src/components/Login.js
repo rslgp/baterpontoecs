@@ -6,7 +6,9 @@ function Login() {
 
     function onLogin(googleResponse){
         console.log(googleResponse);
-        saveToGoogleSheets(googleResponse.profileObj);
+        var inseriu = saveToGoogleSheets(googleResponse.profileObj);
+        if(inseriu) alert("Ponto registrado");
+        else alert("Falha no ponto")
     }
     function getStringClientID(){
       return process.env.REACT_APP_GOOGLE_CLIENTID;

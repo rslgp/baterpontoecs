@@ -45,10 +45,12 @@ async function saveToGoogleSheets(profileObj) {
     
     const row = { Email: profileObj.email, DateISO: getLocalDate(), Nome: profileObj.name};
     console.log(row);
-    await sheet.addRow(row);
+    var GoogleSpreadsheetRowInserted = await sheet.addRow(row);
+    if(GoogleSpreadsheetRowInserted) return true;
   }catch(e){
       console.log("erro inserindo sheet");
       console.log(e.message)
+      return false;
   }
 }
 
