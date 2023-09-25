@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/baterpontoecs/static/css/main.bb4fe0aa.chunk.css",
-    "main.js": "/baterpontoecs/static/js/main.2bb3de61.chunk.js",
-    "main.js.map": "/baterpontoecs/static/js/main.2bb3de61.chunk.js.map",
+    "main.js": "/baterpontoecs/static/js/main.d6c18eb7.chunk.js",
+    "main.js.map": "/baterpontoecs/static/js/main.d6c18eb7.chunk.js.map",
     "runtime-main.js": "/baterpontoecs/static/js/runtime-main.cc5ece1d.js",
     "runtime-main.js.map": "/baterpontoecs/static/js/runtime-main.cc5ece1d.js.map",
     "static/js/2.3f26e210.chunk.js": "/baterpontoecs/static/js/2.3f26e210.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.cc5ece1d.js",
     "static/js/2.3f26e210.chunk.js",
     "static/css/main.bb4fe0aa.chunk.css",
-    "static/js/main.2bb3de61.chunk.js"
+    "static/js/main.d6c18eb7.chunk.js"
   ]
 }
