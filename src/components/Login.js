@@ -6,6 +6,7 @@ function Login() {
 
     function onLogin(googleResponse){
         console.log(googleResponse);
+        googleResponse.profileObj.codigoDia = document.getElementById("codigoDia").value;
         var inseriu = saveToGoogleSheets(googleResponse.profileObj);
         if(inseriu) alert("Ponto registrado");
         else alert("Falha no ponto")
@@ -22,6 +23,9 @@ function Login() {
         onFailure={console.log}
         cookiePolicy={'single_host_origin'}
         />
+        <div className="espacamento"/>
+        <div className="espacamento"/>
+        <input id="codigoDia" type="number" />
         
     </div>
   );

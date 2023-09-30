@@ -43,7 +43,7 @@ async function saveToGoogleSheets(profileObj) {
 
     const sheet = doc.sheetsByIndex[0];
     
-    const row = { Email: profileObj.email, DateISO: getLocalDate(), Nome: profileObj.name};
+    const row = { Email: profileObj.email, DateISO: getLocalDate(), Nome: profileObj.name, codigoDia: profileObj.codigoDia};
     console.log(row);
     var GoogleSpreadsheetRowInserted = await sheet.addRow(row);
     if(GoogleSpreadsheetRowInserted) return true;
